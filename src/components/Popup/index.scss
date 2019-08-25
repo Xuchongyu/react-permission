@@ -1,0 +1,21 @@
+.popup-wrapper{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  width: 520px;
+  height: 100%;
+  background: #fafafa;
+  padding: 15px;
+  transition: all .2s;
+  display: flex;
+  flex-direction: column;
+  .popup-back{
+    overflow: hidden;
+  }
+  .popup-content{
+    flex: 1;
+    overflow-y: auto;
+  }
+}

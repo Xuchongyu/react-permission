@@ -1,0 +1,30 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.ice-layout {
+  min-width: 1200px;
+  .ice-layout-main {
+    background: #f2f2f2;
+    padding: 0;
+    .main-container {
+      margin: 20px;
+      height: calc(100vh - 150px);
+      overflow: hidden;
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      font-weight: 400;
+      position: relative;
+      .scroll{
+        height: 100%;
+        overflow-y: auto;
+      }
+    }
+    .custom-tab{
+      .next-tabs-nav-container{
+        width: 98%;
+      }
+    }
+  }
+}

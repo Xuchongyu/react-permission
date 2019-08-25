@@ -1,0 +1,61 @@
+.management-header{
+  display: flex;
+  .header-content{
+    display: flex;
+    width: 83%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    dl{
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      dt{
+        max-width: 56px;
+      }
+      dd{
+        margin-inline-start:0px;
+        display: flex;
+        .width-style{
+          width: 100px;
+          margin: 0 3px;
+        }
+      }
+    }
+  }
+  .take-in{
+    animation: takeIn 1s;
+    animation-fill-mode: forwards;
+  }
+  .open{
+    animation: openIn 1s;
+    animation-fill-mode: forwards;
+  }
+  .header-button{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    height: 32px;
+    a{
+      color: #1890FF;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+  }
+}
+
+@keyframes takeIn{
+  from{
+    height: 200px;
+  }
+  to{
+    height: 50px;
+  }
+}
+@keyframes openIn{
+  from{
+    height: 50px;
+  }
+  to{
+    height: 200px;
+  }
+}

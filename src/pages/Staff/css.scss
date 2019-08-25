@@ -1,0 +1,76 @@
+.staff-page{
+  margin: -15px;
+  height: calc(100vh - 150px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  .staff-nav{
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    .next-nav.next-normal{
+      -webkit-box-shadow: 0 0 0 0;
+      box-shadow: 0 0 0 0;
+    }
+    .next-menu{
+      border: none;
+    }
+  }
+  .staff-content{
+    .staff-management-header{
+      display: flex;
+      height: 110px;
+      .header-content{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        dl{
+          display: flex;
+          align-items: center;
+          margin-left: 10px;
+          dt{
+            max-width: 56px;
+          }
+          dd{
+            margin-inline-start:0px;
+            display: flex;
+            .width-style{
+              width: 100px;
+              margin: 0 3px;
+            }
+          }
+        }
+      }
+    }
+    .div-pagination{
+      display: flex;
+      align-items: center;
+      >span{
+        margin-right: 15px;
+      }
+    }
+  }
+}
+.new-employees-dialog{
+  width: 80%;
+  .next-dialog-header{
+    background-color: #ebecf0;
+    border-bottom: 1px solid #e6e7eb;
+    font-weight: 600;
+  }
+  dl{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+    dd{
+      margin-inline-start: 0px;
+      .frame-style{
+        margin: 0 8px;
+      }
+      .text-area{
+        width: 72vw;
+        margin-left: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.management-wrapper{
+  width: 100%;
+  min-height: 100%;
+  .management-content{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    .left{
+      float: left;
+      width: 60%;
+    }
+    .right{
+      float: right;
+      width: 40%;
+      height: 100%;
+      padding: 10px;
+    }
+  }
+}

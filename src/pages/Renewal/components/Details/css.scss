@@ -1,0 +1,62 @@
+.renewal-details {
+ 
+  .header-info {
+    display: flex;
+    margin: 15px;
+    dl {
+      display: inherit;
+      margin-right: 20px;
+
+      dd {
+        margin-inline-start: 0px;
+      }
+    }
+  }
+
+  .tab-box {
+    background: rgba(250, 250, 250, 1);
+
+    .next-tabs-pure>.next-tabs-bar {
+      border-bottom: none;
+    }
+
+    .info {
+      width: 100%;
+      margin: 20px;
+      .info-box {
+        border: 1px solid #ccc;
+        background: red;
+        height: 500px;
+        width: 80%;
+        .info-header {
+          padding-left: 24px;
+          height: 35px;
+          line-height: 35px;
+          background: #ccc;
+          border-bottom: 1px solid #ccc;
+          span:nth-child(1){
+            font-weight: 600;
+            margin-right: 100px;
+          }
+          span:nth-child(2){
+            color: #1890FF;
+          }
+        }
+      }
+    }
+  }
+}
+
+.next-myclass{
+  position: relative;
+  color: #ccc;
+  &:after{
+    content: '\20';
+    width: 100%;
+    position: absolute;
+    text-decoration: line-through;
+    border-top: 1px solid rgba(0,0,0, 0.5);
+    top: 20px;
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,27 @@
+.organ-pages{
+  .organ-input{
+    margin-right: 8px;
+  }
+}
+.dialog-style{
+  width: 50%;
+  dl{
+    display: flex;
+    align-items: center;
+    dt{
+      text-align: right;
+      width: 100px;
+      &::before{
+        content: '*';
+        color: red;
+        margin-right: 4px;
+      }
+    }
+    dd{
+      margin-inline-start: 0px;
+      .frame-style{
+        width: 250px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.auth-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .auth-container{
+    flex: 1;
+    overflow-y: auto;
+  }
+  .auth-footer{
+    height: 50px;
+    background: #FAFAFA;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

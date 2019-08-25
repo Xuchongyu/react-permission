@@ -1,0 +1,27 @@
+.panel-wrapper{
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  background: #fff;
+  .panel-header{
+    width: 100%;
+    overflow: hidden;
+    background: #FAFAFA;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 10px 15px;
+    .panel-title{
+      font-weight: 700;
+      color: #333333;
+      float: left;
+    }
+    .panel-desc{
+      margin-left: 80px;
+      float: left;
+    }
+    .operation{
+      float: right;
+    }
+  }
+  .panel-content{
+    padding: 10px 15px;
+  }
+}

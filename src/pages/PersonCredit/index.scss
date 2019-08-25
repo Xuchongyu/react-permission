@@ -1,0 +1,11 @@
+.row-operation{
+  display: flex;
+  padding: 0 10px;
+  &.active{
+    padding: 34px 10px 0;
+  }
+  .row-button{
+    width: 32px;
+    height: 32px;
+  }
+}

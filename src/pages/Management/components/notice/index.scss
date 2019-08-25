@@ -1,0 +1,21 @@
+.notice-wrapper{
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  margin-top: 15px;
+  &:first-child{
+    margin-top: 0;
+  }
+  .noptice-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E9E9E9;
+    color: #353535;
+  }
+  .noptice-content{
+    padding: 15px;
+  }
+}
