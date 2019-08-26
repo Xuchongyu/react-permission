@@ -2,7 +2,7 @@
  * @Author: 徐崇玉
  * @Date: 2019-08-20 12:04:44
  * @LastEditors: 徐崇玉
- * @LastEditTime: 2019-08-20 14:22:41
+ * @LastEditTime: 2019-08-26 15:08:54
  */
 import React from 'react'
 import {
@@ -10,13 +10,6 @@ import {
   // Redirect
 } from 'react-router-dom'
 export default class PermissionComponnt extends React.Component {
-  constructor(prop) {
-    super(prop)
-    console.log(prop)
-    this.state = {
-      permissionArr: ['basicLayout', 'userLayout']
-    }
-  }
   render() {
     const { page, ...pageInfo } = this.props
     // 登录页面不需要做权限验证
@@ -26,7 +19,7 @@ export default class PermissionComponnt extends React.Component {
       // 针对那些需要验证的页面
       if (
         pageInfo.permission &&
-        this.state.permissionArr.includes(pageInfo.permission)
+        pageInfo.permissionArr.includes(pageInfo.permission)
       ) {
         return <Route component={page} />
       } else {

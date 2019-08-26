@@ -1,7 +1,7 @@
 /**
  * 定义应用路由
  */
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Redirect } from 'react-router-dom'
 import React from 'react'
 
 import UserLayout from './layouts/UserLayout'
@@ -15,6 +15,7 @@ export default class ReactRouter extends React.Component {
   constructor() {
     super()
     this.state = {
+      permissionArr: ['basicLayout', 'userLayout'],
       rootReactRouter: [
         {
           name: 'userLayout',
@@ -38,6 +39,7 @@ export default class ReactRouter extends React.Component {
           {this.state.rootReactRouter.map((item, index) => {
             return (
               <PermissionComponent
+                permissionArr={this.state.permissionArr}
                 path={item.path}
                 page={item.pageComponent}
                 permission={item.permission}
@@ -46,6 +48,7 @@ export default class ReactRouter extends React.Component {
               />
             )
           })}
+          <Redirect exact from="/" to="/user" />
         </Switch>
       </HashRouter>
     )
